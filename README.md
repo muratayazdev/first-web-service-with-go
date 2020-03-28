@@ -1,14 +1,9 @@
 # GO
 
-The aim of the document is taking notes while learning Go for to have documentation for looking up when I need
-
+The aim of the document is taking notes while learning Go for to have documentation for looking up when needed
 [TOC]
 
-## Problems
-
-![image-20200327182819636](/Users/muratayaz/Library/Application Support/typora-user-images/image-20200327182819636.png)
-
-Go  =>
+## Go 
 
 * fast compilation time
 * Fully compiled
@@ -17,7 +12,7 @@ Go  =>
 * Garbage collected
 * Simplicity as a core value
 
-###What is go good at?
+### What is go good at?
 
 **Web service + Web application** + Task automation + GUI/Thick Client + Machine learning
 
@@ -33,7 +28,7 @@ Go  =>
 
 ## Primitive Types
 
-###var
+### var
 
 ```go
 var i int
@@ -139,8 +134,8 @@ m // m =>map[]
 ```go
 type user struct {
   ID int
-	FirstName string
-	LasttName string
+  FirstName string
+  LasttName string
 }
 
 var u user // u => {0  }
@@ -185,10 +180,10 @@ var i int
 for i < 5 {
   fmt.Printf("%d ", i)
   i++
-	if i == 3 {
-  	//do something
+  if i == 3 {
+    //do something
     continue
-	}
+  }
   if i == 4 {
     break
   } 
@@ -255,14 +250,14 @@ for _, v := range m { //if we need just values not keys
 
 ### Branching
 
-###Panics
+### Panics
 
 ```go
-//I need to learn it deeply.
+//TODO: I need to learn it deeply.
 panic ("Something happened bad!")
 ```
 
-###If Statements
+### If Statements
 
 ```go
 if i == 3 {
@@ -280,22 +275,18 @@ if i == 3 {
 i := 3
 switch i {
   case 1:
-  	//do something
+    //do something
   case 2:
-  	//do something
-  default: // => not mandotary
-  	//do someting else
+    //do something
+  default: // => not mandatory
+    //do someting else
 } 
 ```
 
-
-
-
-
-
-
 ## Notes
 
-If a package is imported and not being used, It will cause compiling error,
-
-
+* If a package is imported and not being used, It will cause compiling error,
+* If a variable is created and not being used, It will cause compiling error,
+* if a slice is generated from another collection, it should be used carefully
+* default case is not mandatory for switch case
+* If a variable will not being used which comes from another function or method, underscore must be used otherwise the program will not be compiled.
