@@ -1,6 +1,7 @@
 # GO
 
 The aim of the document is taking notes while learning Go for to have documentation for looking up when needed
+
 [TOC]
 
 ## Go 
